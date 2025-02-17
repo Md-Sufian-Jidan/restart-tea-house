@@ -27,8 +27,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'bike-primary': '#E76F51',
-                        'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00'
                     },
                 },
             },
@@ -43,14 +43,16 @@
 
 <body class="manrope-font">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col-reverse lg:flex-row">
+        <div class="my-20">
+            <div class="flex justify-between items-center flex-col-reverse lg:flex-row">
                 <div>
                     <h1 class="text-7xl font-extrabold">It's good <br>
                         tea time at The <br> Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-br from-gradient-start to-gradient-stop text-white">Explore More
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
                 </div>
                 <div>
                     <img src="images/banner.png" class="max-w-sm" />
@@ -146,7 +148,7 @@
         </section>
         <!-- Super client section -->
         <section
-            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
             <div class="flex items-center">
                 <div class="space-y-5 lg:pr-28">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h2>
@@ -217,7 +219,8 @@
                     <div class="card-body space-y-2">
                         <h5 class="font-medium text-[#777777]">Feb 05, 2027</h5>
                         <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
-                        <p class="font-medium text-[#777777]">There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="font-medium text-[#777777]">There are many variations of passages of Lorem Ipsum
+                            available.</p>
                         <p class="font-bold text-[#1C1C1C]">Learn More</p>
                     </div>
                 </div>
@@ -229,7 +232,8 @@
                     <div class="card-body space-y-2">
                         <h5 class="font-medium text-[#777777]">Feb 05, 2027</h5>
                         <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
-                        <p class="font-medium text-[#777777]">There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="font-medium text-[#777777]">There are many variations of passages of Lorem Ipsum
+                            available.</p>
                         <p class="font-bold text-[#1C1C1C]">Learn More</p>
                     </div>
                 </div>
@@ -241,7 +245,8 @@
                     <div class="card-body space-y-2">
                         <h5 class="font-medium text-[#777777]">Feb 05, 2027</h5>
                         <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
-                        <p class="font-medium text-[#777777]">There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="font-medium text-[#777777]">There are many variations of passages of Lorem Ipsum
+                            available.</p>
                         <p class="font-bold text-[#1C1C1C]">Learn More</p>
                     </div>
                 </div>
@@ -249,7 +254,56 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+
+    <footer class=" bg-base-200 text-base-content p-4 lg:px-48 md:py-10">
+        <div class="flex justify-around">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-br from-gradient-start to-gradient-stop text-white">Get Started</button>
+            </p>
+        </div>
+        <div class="footer">
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <h6 class="footer-title">Newsletter</h6>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com"
+                            class="px-2 bg-transparent border-b-2 border-black" />
+                        <button class="btn rounded-full bg-gradient-to-br from-gradient-start to-gradient-stop">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="mt-10 text-center">
+            <p>Copyright &copy; 2025 All right reserved by ACME Industries Ltd</p>
+        </div>
+    </footer>
 </body>
 
 </html>
